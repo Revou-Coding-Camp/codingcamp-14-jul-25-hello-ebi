@@ -103,10 +103,10 @@ function submitMessage() {
   localStorage.setItem('messages', JSON.stringify(messages));
 
   const messageBox = document.createElement('div');
-  messageBox.classList.add('border', 'p-2', 'rounded', 'bg-yellow-50', 'mb-2');
+  messageBox.classList.add('border', 'p-2', 'rounded', 'bg-stone-900', 'mb-2');
   messageBox.innerHTML = `
-    <p class="text-sm font-semibold">${globalUserName} <span class="text-gray-500 text-xs">(${dateString})</span></p>
-    <p class="text-gray-800">${message}</p>
+    <p class="text-sm text-neutral-50 font-semibold">${globalUserName} <span class="text-neutral-500 text-xs">(${dateString})</span></p>
+    <p class="text-neutral-200">${message}</p>
   `;
 
   messageOutput.appendChild(messageBox);
@@ -123,10 +123,10 @@ function loadMessages() {
 
   messages.forEach((msg) => {
     const messageBox = document.createElement('div');
-    messageBox.classList.add('border', 'p-2', 'rounded', 'bg-yellow-50', 'mb-2');
+    messageBox.classList.add('border', 'p-2', 'rounded', 'bg-stone-900', 'mb-2');
     messageBox.innerHTML = `
-      <p class="text-sm font-semibold">${msg.userName} <span class="text-gray-500 text-xs">(${msg.date})</span></p>
-      <p class="text-gray-800">${msg.message}</p>
+      <p class="text-sm text-neutral-50 font-semibold">${msg.userName} <span class="text-neutral-500 text-xs">(${msg.date})</span></p>
+      <p class="text-neutral-200">${msg.message}</p>
     `;
     messageOutput.appendChild(messageBox);
   });
