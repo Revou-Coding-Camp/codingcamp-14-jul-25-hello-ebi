@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio ebi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-stone-950 z-50">
+<a href="https://github.com/hello-ebi" class="hover:scale-110 active:scale-125 transition-transform duration-200 ease-in-out cursor-pointer">
+        <div class="h-12 w-22 bg-center text-xl bg-cover py-3" style="font-family: 'Source Code Pro', monospace; font-weight: 600">
+        <span class="text-white">hell</span><span class="text-white">o-ebi</span>
+    </div>
+</a>
+    <nav class="flex gap-2">
+      <a href="#home-page" class="border px-4 py-2 rounded">Home</a>
+      <a href="#about" class="border px-4 py-2 rounded">Our Profile</a>
+      <a href="#message-us" class="border px-4 py-2 rounded">Message Us</a>
+    </nav>
+  </header>
+
+
+  <main class="pt-20 snap-y snap-mandatory h-screen overflow-y-scroll">
+ 
+  <section
+  id="home-page"
+  class="relative h-screen bg-[url(assets/images/background.png)] bg-cover bg-center bg-no-repeat snap-start text-white"
+>
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-md"></div>
+
+  <div class="relative z-10 flex flex-col items-center justify-center h-full">
+    <h1 class="text-4xl font-bold mb-4">Welcome <span id="welcome-user">[User]</span></h1>
+    <p class="text-center max-w-md">Kaca buram vibes 🍷✨</p>
+  </div>
+</section>
+
+
+    <section id="about" class="h-screen flex flex-col items-center justify-center bg-green-100 snap-start">
+      <h2 class="text-3xl font-semibold mb-4">Our Profile</h2>
+      <p class="text-center max-w-md">We are a team of dedicated professionals committed to providing the best services possible. Our profile includes our mission, vision, and values.</p>
+    </section>
+
+    <section id="message-us" class="h-screen flex flex-col items-center justify-center bg-yellow-100 snap-start">
+      <h2 class="text-3xl font-semibold mb-4">Message Us</h2>
+      <form class="flex flex-col items-center">
+        <label for="name-input" class="mb-2">Name:</label>
+        <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-64" />
+        <button onclick="validateForm();" type="button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Send Message</button>
+      </form>
+      <div id="message-output" class="text-center mt-4">Result:</div>
+    </section>
+  </main>
+
+
+<footer id="footer" class="fixed bottom-0 w-full text-center text-gray-600 py-4 bg-white shadow-md z-50">
+  © 2025 Febrian Eka Putra. All rights reserved. <br/>
+  <a href="https://github.com/hello-ebi">Github</a>
+  <a href="https://www.linkedin.com/in/febrian-eka-putra-92a8a735a">LinkedIn</a>
+  <a href="https://x.com/penantanghilang">X</a>
+</footer>
+
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
