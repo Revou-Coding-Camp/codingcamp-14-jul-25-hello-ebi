@@ -14,21 +14,22 @@
 </head>
 
 <body class="bg-white text-gray-800" style="font-family: 'Montserrat', sans-serif;">
-  <!-- Header -->
-  <header id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-stone-950 z-50">
-    <a href="https://github.com/hello-ebi"
-      class="hover:scale-110 active:scale-125 transition-transform duration-200 ease-in-out cursor-pointer">
-      <div class="h-12 w-22 bg-center text-xl bg-cover py-3"
-        style="font-family: 'Source Code Pro', monospace; font-weight: 600">
-        <span class="text-white">hell</span><span class="text-white">o-ebi</span>
-      </div>
-    </a>
-    <nav class="flex gap-2 text-white">
-      <a href="#home-page" class="px-4 py-2 rounded hover:bg-stone-600">Beranda</a>
-      <a href="#about" class="px-4 py-2 rounded hover:bg-stone-600">Tentang Saya</a>
-      <a href="#contact-me" class="px-4 py-2 rounded hover:bg-stone-600">Hubungi Saya</a>
-    </nav>
-  </header>
+
+<header id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-stone-950 z-50">
+  <a href="https://github.com/hello-ebi"
+    class="hover:scale-110 active:scale-125 transition-transform duration-200 ease-in-out cursor-pointer">
+    <div class="h-12 w-22 bg-center text-xl bg-cover py-3"
+      style="font-family: 'Source Code Pro', monospace; font-weight: 600">
+      <span class="text-white">hell</span><span class="text-white">o-ebi</span>
+    </div>
+  </a>
+  <nav class="flex gap-2 text-white items-center">
+    <a href="#home-page" class="px-4 py-2 rounded hover:bg-stone-600">Beranda</a>
+    <a href="#about" class="px-4 py-2 rounded hover:bg-stone-600">Tentang Saya</a>
+    <a href="#contact-me" class="px-4 py-2 rounded hover:bg-stone-600">Hubungi Saya</a>
+    <button onclick="logout()" class="px-4 py-2 rounded hover:bg-red-600 bg-red-500">Keluar</button>
+  </nav>
+</header>
 
 
   <main class="pt-20 snap-y snap-mandatory h-screen overflow-y-scroll">
@@ -56,10 +57,10 @@
           class="w-80 h-80 rounded-tr-3xl rounded-bl-3xl object-cover object-top shadow-[0_20px_50px_rgba(0,0,0,0.7)]" />
 
         <div class="text-left flex flex-col">
-          <h2 class="text-3xl font-semibold mb-4">Febrian Eka Putra</h2>
+          <h2 class="text-3xl font-semibold mb-4">Tentang Febrian Eka Putra</h2>
           <p class="text-gray-700">
-            salam kenal <span id="welcome-user">[User]</span>
-            Saya biasa dipanggil ebi. saya memiliki minat besar di dunia pengembangan perangkat lunak, khususnya pada
+            Salam kenal <span id="about-user">[User]</span>!
+           panggil saja saya ebi. saya memiliki minat besar di dunia pengembangan perangkat lunak, khususnya pada
             pengembangan web fullstack.<br><br>
 
             Saya tengah fokus memperdalam keterampilan di bidang Frontend dan Backend Development, dengan tujuan menjadi
@@ -84,17 +85,21 @@
 
 
 
-    <section id="contact-me" class="h-screen flex flex-col items-center justify-center bg-yellow-100 snap-start">
-      <h2 class="text-3xl font-semibold mb-4">Message Us</h2>
-      <form class="flex flex-col items-center">
-        <label for="name-input" class="mb-2">Name:</label>
-        <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-64" />
-        <button onclick="validateForm();" type="button"
-          class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Send Message</button>
-      </form>
-      <div id="message-output" class="text-center mt-4">Result:</div>
-    </section>
-  </main>
+<section id="contact-me" class="h-screen flex flex-col items-center justify-center bg-stone-300 snap-start px-4">
+  <h2 class="text-3xl font-semibold mb-4">Berikan saya pesan</h2>
+
+  <div class="flex flex-col md:flex-row items-start gap-8">
+    
+    <form id="message-form" class="flex flex-col w-full max-w-md">
+      <label for="message-input" class="mb-2">Message:</label>
+      <textarea id="message-input" name="message" rows="4" class="border rounded p-2 mb-4 w-full"></textarea>
+      <button type="button" onclick="submitMessage()" class="bg-stone-100 text-stone-950 px-4 py-2 rounded-full hover:bg-stone-400">Send Message</button>
+    </form>
+
+    <div id="message-output" class="w-full max-w-md bg-white border rounded-lg p-4 max-h-80 overflow-y-auto"></div>
+  </div>
+</section>
+
 
 
   <footer id="footer" class="fixed bottom-0 w-full text-center text-white py-4 bg-stone-950 shadow-md z-50">
