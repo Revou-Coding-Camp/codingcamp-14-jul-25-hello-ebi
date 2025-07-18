@@ -8,102 +8,133 @@
   <link rel="stylesheet" href="css/styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-</style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
 </head>
 
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800" style="font-family: 'Montserrat', sans-serif;">
   <!-- Header -->
   <header id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-stone-950 z-50">
-<a href="https://github.com/hello-ebi" class="hover:scale-110 active:scale-125 transition-transform duration-200 ease-in-out cursor-pointer">
-        <div class="h-12 w-22 bg-center text-xl bg-cover py-3" style="font-family: 'Source Code Pro', monospace; font-weight: 600">
+    <a href="https://github.com/hello-ebi"
+      class="hover:scale-110 active:scale-125 transition-transform duration-200 ease-in-out cursor-pointer">
+      <div class="h-12 w-22 bg-center text-xl bg-cover py-3"
+        style="font-family: 'Source Code Pro', monospace; font-weight: 600">
         <span class="text-white">hell</span><span class="text-white">o-ebi</span>
-    </div>
-</a>
-    <nav class="flex gap-2">
-      <a href="#home-page" class="border px-4 py-2 rounded">Home</a>
-      <a href="#about" class="border px-4 py-2 rounded">Our Profile</a>
-      <a href="#message-us" class="border px-4 py-2 rounded">Message Us</a>
+      </div>
+    </a>
+    <nav class="flex gap-2 text-white">
+      <a href="#home-page" class="px-4 py-2 rounded hover:bg-stone-600">Beranda</a>
+      <a href="#about" class="px-4 py-2 rounded hover:bg-stone-600">Tentang Saya</a>
+      <a href="#contact-me" class="px-4 py-2 rounded hover:bg-stone-600">Hubungi Saya</a>
     </nav>
   </header>
 
 
   <main class="pt-20 snap-y snap-mandatory h-screen overflow-y-scroll">
- 
-  <section
-  id="home-page"
-  class="relative h-screen bg-[url(assets/images/background.png)] bg-cover bg-center bg-no-repeat snap-start text-white"
->
-  <div class="absolute inset-0 bg-black/30 backdrop-blur-3xl"></div>
 
-  <div class="relative z-10 flex flex-col items-center justify-center h-full">
-<h1 class="text-4xl font-bold mb-4">Halo <span id="welcome-user">[User]</span>.</h1>
-    <p class="text-center max-w-md">Nama saya Febrian Eka Putra, saat ini saya sedang belajar menjadi Fullstack Web Developer.</p>
-  </div>
-</section>
+    <section id="home-page"
+      class="relative h-screen bg-[url(assets/images/background.png)] bg-cover bg-center bg-no-repeat snap-start text-white">
 
+      <div class="absolute inset-0 bg-black/30 backdrop-blur-3xl"></div>
 
-    <section id="about" class="h-screen flex flex-col items-center justify-center bg-green-100 snap-start">
-      <h2 class="text-3xl font-semibold mb-4">Our Profile</h2>
-      <p class="text-center max-w-md">We are a team of dedicated professionals committed to providing the best services possible. Our profile includes our mission, vision, and values.</p>
+      <div class="relative z-50 flex flex-col items-center justify-center h-full">
+        <img src="assets/images/ebi.jpg" class="w-40 h-40 rounded-full object-cover mb-4" alt="Foto Ebi">
+        <h1 class="text-4xl font-bold mb-2">Halo <span id="welcome-user">[User]</span>.</h1>
+        <p class="text-center max-w-md mb-2">Nama saya Febrian Eka Putra, saat ini saya sedang belajar menjadi Fullstack
+          Web
+          Developer.</p>
+        <a href="#about" class="bg-stone-100 text-stone-950 px-4 py-2 rounded-full hover:bg-stone-400">Portofolio</a>
+      </div>
     </section>
 
-    <section id="message-us" class="h-screen flex flex-col items-center justify-center bg-yellow-100 snap-start">
+
+    <section id="about" class="h-screen flex items-center justify-center bg-stone-200 snap-start px-4">
+      <div class="flex flex-row items-center gap-8 max-w-5xl w-full mx-auto">
+
+        <img src="/assets/images/ebi.gif" alt="ebi gif"
+          class="w-80 h-80 rounded-tr-3xl rounded-bl-3xl object-cover object-top shadow-[0_20px_50px_rgba(0,0,0,0.7)]" />
+
+        <div class="text-left flex flex-col">
+          <h2 class="text-3xl font-semibold mb-4">Febrian Eka Putra</h2>
+          <p class="text-gray-700">
+            salam kenal <span id="welcome-user">[User]</span>
+            Saya biasa dipanggil ebi. saya memiliki minat besar di dunia pengembangan perangkat lunak, khususnya pada
+            pengembangan web fullstack.<br><br>
+
+            Saya tengah fokus memperdalam keterampilan di bidang Frontend dan Backend Development, dengan tujuan menjadi
+            seorang Fullstack Developer yang kompeten dan adaptif.<br><br>
+
+            Saat ini saya aktif mempelajari:<br><br>
+
+            <strong>Frontend:</strong> React.js, Tailwind CSS, SPA (Single Page Application), Atomic Design React, dan
+            React Native.<br>
+            <strong>Backend:</strong> Node.js, Express.js, MongoDB, PostgreSQL, dan MySQL.<br>
+            <strong>Tools pendukung:</strong> VSCode, Git, dan Github.<br><br>
+
+            Saya selalu antusias menghadapi tantangan baru, menjadikannya peluang untuk tumbuh, berinovasi, dan
+            berkolaborasi dalam menciptakan aplikasi yang kreatif dan bermakna. Oleh karena itu, saya selalu terbuka
+            terhadap tantangan baru, kolaborasi tim, serta eksplorasi berbagai pendekatan kreatif dalam pengembangan
+            aplikasi.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="contact-me" class="h-screen flex flex-col items-center justify-center bg-yellow-100 snap-start">
       <h2 class="text-3xl font-semibold mb-4">Message Us</h2>
       <form class="flex flex-col items-center">
         <label for="name-input" class="mb-2">Name:</label>
         <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-64" />
-        <button onclick="validateForm();" type="button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Send Message</button>
+        <button onclick="validateForm();" type="button"
+          class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Send Message</button>
       </form>
       <div id="message-output" class="text-center mt-4">Result:</div>
     </section>
   </main>
 
 
-<footer id="footer" class="fixed bottom-0 w-full text-center text-gray-600 py-4 bg-white shadow-md z-50">
-  © 2025 Febrian Eka Putra. All rights reserved. <br/>
-  <a href="https://github.com/hello-ebi">Github</a>
-  <a href="https://www.linkedin.com/in/febrian-eka-putra-92a8a735a">LinkedIn</a>
-  <a href="https://x.com/penantanghilang">X</a>
-</footer>
+  <footer id="footer" class="fixed bottom-0 w-full text-center text-white py-4 bg-stone-950 shadow-md z-50">
+    © 2025 Febrian Eka Putra. All rights reserved. <br />
+    <a href="https://github.com/hello-ebi">Github</a>
+    <a href="https://www.linkedin.com/in/febrian-eka-putra-92a8a735a">LinkedIn</a>
+    <a href="https://x.com/penantanghilang">X</a>
+  </footer>
 
-<div id="nameModal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50">
-  <div class="bg-white rounded-lg p-6 shadow-xl w-[90%] max-w-md text-center">
-    <h2 class="text-2xl font-semibold mb-4">Halo, sebelum masuk kenalin dong nama kamu siapa?</h2>
-    <input
-      type="text"
-      id="modal-name-input"
-      placeholder="Masukan nama kamu"
-      class="border w-full p-2 rounded mb-4"
-    />
-    <button
-      onclick="submitName()"
-      class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-stone-800"
-    >
-      Masuk
-    </button>
+  <div id="nameModal"
+    class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-6 shadow-xl w-[90%] max-w-md text-center">
+      <h2 class="text-2xl font-semibold mb-4">Halo, sebelum masuk kenalin dong nama kamu siapa?</h2>
+      <input type="text" id="modal-name-input" placeholder="Masukan nama kamu" class="border w-full p-2 rounded mb-4" />
+      <button onclick="submitName()" class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-stone-800">
+        Masuk
+      </button>
+    </div>
   </div>
-</div>
 
 
   <!-- JS -->
   <script src="js/script.js"></script>
   <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        keyframes: {
-          'fade-down': {
-            '0%': { opacity: '0', transform: 'translateY(-40px)' },
-            '100%': { opacity: '1', transform: 'translateY(0)' },
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            'fade-down': {
+              '0%': { opacity: '0', transform: 'translateY(-40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            'fade-down': 'fade-down 1s ease-out forwards'
           }
-        },
-        animation: {
-          'fade-down': 'fade-down 1s ease-out forwards'
         }
       }
     }
-  }
-</script>
+  </script>
 </body>
+
 </html>
