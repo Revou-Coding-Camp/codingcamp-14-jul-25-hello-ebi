@@ -1,23 +1,24 @@
 
-showWelcomePopup();
+  function getGreeting() {
+    const now = new Date();
+    const hour = now.getHours();
 
-function showWelcomePopup() {
-    let userName = prompt("Please enter your name:");
-    if (userName != '') {
-        document.getElementById('welcome-user').innerHTML = userName;
+    if (hour >= 4 && hour < 11) return "Selamat pagi";
+    if (hour >= 11 && hour < 15) return "Selamat siang";
+    if (hour >= 15 && hour < 18) return "Selamat sore";
+    return "Selamat malam";
+  }
+
+  function submitName() {
+    const input = document.getElementById("modal-name-input");
+    const userName = input.value.trim();
+
+    if (userName !== "") {
+      const greeting = getGreeting();
+      document.getElementById("welcome-user").innerText = `${userName}, ${greeting}`;
+      document.getElementById("nameModal").classList.add("hidden");
     }
-}
-
-function validateForm() {
-    const nameInput = document.getElementById('name-input');
-
-    if (nameInput.value === '') {
-        alert('Please enter your name.');
-    } else {
-        document.getElementById('message-output').innerHTML = `Thank you, ${nameInput.value}, for your message!`;
-        nameInput.value = '';
-    }
-}
+  }
 
   document.addEventListener('DOMContentLoaded', function () {
     const main = document.querySelector('main');
@@ -38,6 +39,5 @@ function validateForm() {
       }
     });
 
-    // Jalankan saat pertama kali biar navbar/footernya langsung ilang kalo di hero
     main.dispatchEvent(new Event('scroll'));
   });
