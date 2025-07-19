@@ -72,4 +72,4 @@ Website ini saya buat untuk memperkenalkan diri, menampilkan keterampilan saya s
 
 ---
 
-> Dibuat dengan semangat belajar dan ketekunan oleh **Febrian Eka Putra**
+> Dibuat dengan semangat belajar oleh **Febrian Eka Putra**
