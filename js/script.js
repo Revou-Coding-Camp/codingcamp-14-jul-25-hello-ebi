@@ -1,3 +1,4 @@
+// js/script.js
 
   function getGreeting() {
     const now = new Date();
