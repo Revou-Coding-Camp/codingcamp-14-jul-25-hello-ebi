@@ -64,14 +64,6 @@ Website ini saya buat untuk memperkenalkan diri, menampilkan keterampilan saya s
 
 ---
 
-## 📸 Preview Gambar
-
-- `background.png` → Background utama landing page  
-- `ebi.jpg` → Foto profil untuk section pertama  
-- `ebi.gif` → GIF animasi untuk section tentang saya
-
----
-
 ## Kontak
 
 - GitHub: [@hello-ebi](https://github.com/hello-ebi)
